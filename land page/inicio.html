@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nostalgia</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="#ale">
+                <h1> Divirta-se como nossos pais </h1>
+            </a>
+        </div>
+        <nav>
+            <a href="#brinquedos">Brinquedos a venda</a>
+            <a href="#local">Encontre nossa loja</a>
+            <a href="#contato">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <section id="banner">
+    </section>
+
+    <div class="conteudo">
+        <a name="ale"></a>
+        <div> Desembarque nas décadas de 80 e 90, onde a simplicidade era sinônimo de felicidade.</div>
+        <div> Seus pais já te contaram o quanto os brinquedos de antigamente era mais divertidos que os seus?</div>
+        </div>
+        
+
+    <!-- <section id="banner2"> -->
+        <a name="brinquedos"></a>
+        <div class="wrapper">
+                <img src="img/genio.jpg" />
+                <img src="img/baby.jpg" />
+                <img src="img/batebate.jpg" />
+                <img src="img/bichinhovirtual.jpg" />
+                <img src="img/bloco.JPG" />
+                <img src="img/cachorrinho.jpg" />
+                <img src="img/encaixa.jpg" />
+                <img src="img/fita.jpg" />
+                <img src="img/furby.jpg" />
+                <img src="img/fusca.jpeg" />
+                <img src="img/gravador.jpg" />
+                <img src="img/molamaluca.jpg" />
+                <img src="img/oie_transparent.png" />
+                <img src="img/pogobol.jpg" />
+                <img src="img/ratinho.jpg" />
+                <img src="img/mini.jpg" />
+                <img src="img/bil.jpg" />
+
+        </div>
+        <div> <h3> Prepare-se!!! É hora de conhecer os brinquedos mais divertidos da história </h3></div>
+    </div>
+        
+    <div class="container">
+        <div class="cep">
+            <h2> Encontre nossa loja</h2>
+        <p>Digite seu CEP</p>
+        <input type="text" name="cep" id="cep">
+        <input type="button" value=" Encontrar">
+        </div>
+
+    <a name="local"></a>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var uluru = { lat: -25.363, lng: 131.044 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4n2aJYgTnEqgeiw-YzyCD6PgtoY6jQQo&callback=initMap">
+    </script>
+    </div>
+
+</body>
+
+<footer>
+    <a name="contato"></a>
+    <div>
+        Avenida Paulista, 1374 - Bela Vista - São Paulo - SP - Telefone: (011) XXXX-XXXX
+    </div>
+</footer>
+</html>
